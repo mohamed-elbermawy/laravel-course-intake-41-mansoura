@@ -11,7 +11,7 @@
  <!-- As a link -->
 <nav class="navbar navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">All Posts</a>
     </div>
   </nav>
 <a href="#" class="btn btn-success">Create Post</a>
