@@ -22,8 +22,13 @@ class PostController extends Controller
     {
         $post = ['id' => 1, 'title' => 'Laravel', 'description' => 'Show Post Description', 'posted_by' => 'Ahmed', 'created_at' => '2021-03-13'];
 
-        return view('posts.show',[
+        return view('posts.show', [
             'post' => $post
         ]);
+    }
+
+    public function create()
+    {
+        return view('posts.create');
     }
 }
