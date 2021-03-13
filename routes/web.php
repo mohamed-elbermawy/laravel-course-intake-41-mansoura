@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TestController; //== require('TestController')
+use App\Http\Controllers\PostController; //== require('TestController')
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('test2', [TestController::class, 'testAction']);
+Route::get('posts', [PostController::class, 'index']);
 //Route::get('test3', 'App\Http\Controllers\TestController@testAction'); just for learning
 
 Route::get('/test', function () {
