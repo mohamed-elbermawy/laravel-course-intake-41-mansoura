@@ -19,6 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('posts', [PostController::class, 'index']);
+Route::get('/posts/{post}',[PostController::class, 'show']);
 //Route::get('test3', 'App\Http\Controllers\TestController@testAction'); just for learning
 
 Route::get('/test', function () {
