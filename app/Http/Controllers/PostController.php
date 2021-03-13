@@ -31,4 +31,11 @@ class PostController extends Controller
     {
         return view('posts.create');
     }
+
+    public function store()
+    {
+        //logic for saving in db
+
+        return redirect()->route('posts.index');
+    }
 }
